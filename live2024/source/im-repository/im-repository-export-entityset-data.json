@@ -108,9 +108,18 @@
       "variableName" : null,
       "array" : false
     }, {
+      "id" : "mail",
+      "type" : "dictionary-item",
+      "sortNumber" : 4,
+      "primaryKey" : false,
+      "required" : false,
+      "relationId" : null,
+      "variableName" : null,
+      "array" : false
+    }, {
       "id" : "live2024_live2024_profile_detail_ENTITY_001_8hctr7s6v18oz85",
       "type" : "entityset-entity",
-      "sortNumber" : 4,
+      "sortNumber" : 5,
       "primaryKey" : false,
       "required" : false,
       "relationId" : "8hctr7s6v18p485",
@@ -209,16 +218,11 @@
   "tableDefinitions" : [ {
     "entityId" : "live2024_live2024_profile_ENTITY_000_8hctr7s6v18oy85",
     "databaseKind" : "tenant",
-    "connectionId" : "",
+    "connectionId" : null,
     "tableName" : "live2024_profile",
     "enableChangeLog" : false,
     "disableDifferenceTable" : false,
-    "entitySearchDefinitions" : [ {
-      "targetId" : "simple_workflow-user_data_id",
-      "targetType" : "dictionary-item",
-      "searchType" : "exact-match",
-      "sortNumber" : 0
-    } ],
+    "entitySearchDefinitions" : null,
     "externalReferenceDefinitions" : null
   }, {
     "entityId" : "live2024_live2024_profile_detail_ENTITY_001_8hctr7s6v18oz85",

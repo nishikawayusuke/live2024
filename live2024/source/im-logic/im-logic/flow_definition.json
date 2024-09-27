@@ -1174,6 +1174,13 @@
           "required" : false,
           "basic" : true
         }, {
+          "typeId" : "string",
+          "name" : "mail",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        }, {
           "typeId" : "imrepo_entity_live2024_live2024_profile_detail_ENTITY_001_8hctr7s6v18oz85",
           "name" : "live2024_profile_detail_ENTITY_001",
           "description" : null,
@@ -6862,6 +6869,1606 @@
                     "listingType" : "none",
                     "required" : "false",
                     "basic" : true
+                  } ]
+                } ]
+              }
+            },
+            "common" : {
+              "executeId" : "im_repositoryGetEntityData1",
+              "alias" : "im_repositoryGetEntityData1",
+              "label" : "live2024_live2024_profile_ENTITY_000_8hctr7s6v18oy85 の取得",
+              "comment" : "",
+              "mapping" : null
+            },
+            "typical" : {
+              "continueOnError" : false,
+              "entityId" : "live2024_live2024_profile_ENTITY_000_8hctr7s6v18oy85"
+            },
+            "mapping" : {
+              "inputKeys" : [ "$variable" ],
+              "additionalKeys" : [ ],
+              "json" : {
+                "version" : 1,
+                "attrs" : { },
+                "connectors" : [ {
+                  "id" : "14d1882b-682a-439d-a57f-fa9f21723f27",
+                  "source" : {
+                    "id" : "efffb95a-b2c1-4933-b554-50566adae317",
+                    "type" : "$input",
+                    "path" : "$variable\tuserDataId",
+                    "port" : "out"
+                  },
+                  "target" : {
+                    "id" : "1cabc6f2-6a8b-4a32-8405-9a10b5d57dfc",
+                    "type" : "$output",
+                    "path" : "im_repositoryGetEntityData1\tuserDataId",
+                    "port" : "in"
+                  }
+                } ],
+                "size" : {
+                  "width" : 400,
+                  "height" : 500
+                }
+              }
+            }
+          },
+          "12a8f436-2e9c-4f67-b1fd-6efa6d459b69" : {
+            "metadata" : {
+              "key" : {
+                "type" : "application",
+                "id" : "im_end"
+              },
+              "elementProperties" : [ {
+                "propertyName" : "executeId",
+                "enable" : true,
+                "required" : true,
+                "array" : false,
+                "label" : "executeId",
+                "options" : [ ]
+              }, {
+                "propertyName" : "alias",
+                "enable" : true,
+                "required" : false,
+                "array" : false,
+                "label" : "alias",
+                "options" : [ ]
+              } ],
+              "inputDataDefinition" : null,
+              "outputDataDefinition" : null
+            },
+            "common" : {
+              "executeId" : "im_end1",
+              "alias" : "im_end1",
+              "label" : "終了",
+              "comment" : "",
+              "mapping" : null
+            },
+            "typical" : { },
+            "mapping" : {
+              "inputKeys" : [ "$variable", "im_repositoryGetEntityData1" ],
+              "additionalKeys" : [ ],
+              "json" : {
+                "version" : 1,
+                "attrs" : { },
+                "connectors" : [ {
+                  "id" : "04dd993e-ddcf-4c28-9127-75adce0a9192",
+                  "source" : {
+                    "id" : "80fbeb5d-2761-488f-841f-b154e7109cb6",
+                    "type" : "$input",
+                    "path" : "$variable\tisCopied",
+                    "port" : "out"
+                  },
+                  "target" : {
+                    "id" : "e9aaed43-eb8b-4bd8-8a6d-02d0d19114df",
+                    "type" : "$output",
+                    "path" : "$output\tisCopied",
+                    "port" : "in"
+                  }
+                }, {
+                  "id" : "c9089e28-f7be-4947-b78b-4edce36a74ff",
+                  "source" : {
+                    "id" : "70398f5e-27b1-4109-a303-c2a0c3349a9a",
+                    "type" : "$input",
+                    "path" : "im_repositoryGetEntityData1",
+                    "port" : "out"
+                  },
+                  "target" : {
+                    "id" : "aee62b53-8533-4099-a093-2d271e6ed199",
+                    "type" : "$output",
+                    "path" : "$output\tuserData",
+                    "port" : "in"
+                  }
+                } ],
+                "size" : {
+                  "width" : 400,
+                  "height" : 500
+                }
+              }
+            }
+          }
+        },
+        "optionMap" : {
+          "08fe0490-5043-43e5-b48b-fa8f0ac008a7" : {
+            "title" : "im_comment1",
+            "label" : "コピー新規機能が利用された際には、コピー元案件のユーザデータIDをデータ取得条件に設定します。\nコピー元案件に添付ファイル情報が存在していても添付ファイルはコピーしません。",
+            "inNum" : 1,
+            "outNum" : 1
+          },
+          "95577916-72e1-4d6b-813e-9bd0d6cff08b" : {
+            "title" : "im_start",
+            "label" : "開始",
+            "inNum" : 1,
+            "outNum" : 1
+          },
+          "78679ce5-d602-4955-9f4c-572335719a17" : {
+            "title" : "im_gateway1",
+            "label" : "案件一覧のコピー新規機能による画面遷移のとき",
+            "inNum" : 1,
+            "outNum" : 2,
+            "outPorts" : [ "then", "else" ]
+          },
+          "52d813b2-afda-408e-8064-910b96e8ed69" : {
+            "title" : "im_variableOperation1",
+            "label" : "コピー元案件データ取得用パラメータ設定",
+            "inNum" : 1,
+            "outNum" : 1
+          },
+          "8882c568-ca23-4a20-a54e-4f983b6f70ad" : {
+            "title" : "im_variableOperation2",
+            "label" : "通常用パラメータ設定",
+            "inNum" : 1,
+            "outNum" : 1
+          },
+          "38d6fc69-5dd6-4c42-8314-70cf47b1e9c8" : {
+            "title" : "im_repositoryGetEntityData1",
+            "label" : "live2024_live2024_profile_ENTITY_000_8hctr7s6v18oy85 の取得",
+            "inNum" : 1,
+            "outNum" : 1
+          },
+          "12a8f436-2e9c-4f67-b1fd-6efa6d459b69" : {
+            "title" : "im_end1",
+            "label" : "終了",
+            "inNum" : 1,
+            "outNum" : 1
+          }
+        }
+      }
+    }
+  }, {
+    "flowId" : "live2024-get-user-data",
+    "version" : 2,
+    "categoryId" : "im_accel_studio",
+    "flowName" : "live2024 ユーザデータ取得処理",
+    "localizes" : {
+      "ja" : {
+        "locale" : "ja",
+        "flowName" : "live2024 ユーザデータ取得処理"
+      },
+      "en" : {
+        "locale" : "en",
+        "flowName" : "live2024 user data acquisition process"
+      },
+      "zh_CN" : {
+        "locale" : "zh_CN",
+        "flowName" : "live2024用户数据获取处理"
+      }
+    },
+    "notes" : "「シンプルなワークフロー」テンプレートから作成されたユーザデータ取得処理です。",
+    "transaction" : true,
+    "validateRepositoryData" : false,
+    "constants" : [ {
+      "name" : "FALSE",
+      "value" : "false",
+      "typeId" : "string",
+      "description" : "",
+      "common" : false
+    }, {
+      "name" : "TRUE",
+      "value" : "true",
+      "typeId" : "string",
+      "description" : "",
+      "common" : false
+    } ],
+    "variablesDataDefinition" : {
+      "entrypoint" : {
+        "typeId" : "root",
+        "basic" : false,
+        "required" : false,
+        "listingType" : "none"
+      },
+      "typeDefinitions" : [ {
+        "id" : "root",
+        "properties" : [ {
+          "typeId" : "string",
+          "name" : "userDataId",
+          "description" : "",
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        }, {
+          "typeId" : "boolean",
+          "name" : "isCopied",
+          "description" : "",
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        } ]
+      }, {
+        "id" : "string",
+        "properties" : [ ]
+      }, {
+        "id" : "boolean",
+        "properties" : [ ]
+      } ]
+    },
+    "flowElements" : [ {
+      "executeId" : "im_start",
+      "alias" : null,
+      "key" : {
+        "type" : "application",
+        "id" : "im_start",
+        "version" : null
+      },
+      "label" : "開始",
+      "comment" : "",
+      "properties" : { },
+      "mappingDefinition" : {
+        "mappingRules" : [ ]
+      }
+    }, {
+      "executeId" : "im_gateway1",
+      "alias" : null,
+      "key" : {
+        "type" : "application",
+        "id" : "im_gateway",
+        "version" : null
+      },
+      "label" : "案件一覧のコピー新規機能による画面遷移のとき",
+      "comment" : "",
+      "properties" : {
+        "defaultRoot" : "im_gateway1_im_variableOperation2"
+      },
+      "mappingDefinition" : {
+        "mappingRules" : [ ]
+      }
+    }, {
+      "executeId" : "im_variableOperation1",
+      "alias" : null,
+      "key" : {
+        "type" : "application",
+        "id" : "im_variableOperation",
+        "version" : null
+      },
+      "label" : "コピー元案件データ取得用パラメータ設定",
+      "comment" : "",
+      "properties" : {
+        "continueOnError" : false
+      },
+      "mappingDefinition" : {
+        "mappingRules" : [ {
+          "id" : "a3b7fbfd-31ea-468e-8898-d25bac5d91dc",
+          "target" : "$variable/userDataId",
+          "source" : {
+            "type" : "value",
+            "name" : null,
+            "path" : "$input/request/imwOriginalUserDataId",
+            "arguments" : null
+          }
+        }, {
+          "id" : "49965baf-d625-46e9-bd20-97506c6cbb9d",
+          "target" : "$variable/isCopied",
+          "source" : {
+            "type" : "value",
+            "name" : null,
+            "path" : "$const/TRUE",
+            "arguments" : null
+          }
+        } ]
+      }
+    }, {
+      "executeId" : "im_variableOperation2",
+      "alias" : null,
+      "key" : {
+        "type" : "application",
+        "id" : "im_variableOperation",
+        "version" : null
+      },
+      "label" : "通常用パラメータ設定",
+      "comment" : "",
+      "properties" : {
+        "continueOnError" : false
+      },
+      "mappingDefinition" : {
+        "mappingRules" : [ {
+          "id" : "7a49a180-a94a-459b-a2b1-eda6cd1f2837",
+          "target" : "$variable/userDataId",
+          "source" : {
+            "type" : "value",
+            "name" : null,
+            "path" : "$input/request/imwUserDataId",
+            "arguments" : null
+          }
+        }, {
+          "id" : "9ae9e0e0-7598-4677-ad4a-521f8cbfa760",
+          "target" : "$variable/isCopied",
+          "source" : {
+            "type" : "value",
+            "name" : null,
+            "path" : "$const/FALSE",
+            "arguments" : null
+          }
+        } ]
+      }
+    }, {
+      "executeId" : "im_repositoryGetEntityData1",
+      "alias" : null,
+      "key" : {
+        "type" : "application",
+        "id" : "im_repositoryGetEntityData",
+        "version" : null
+      },
+      "label" : "live2024_live2024_profile_ENTITY_000_8hctr7s6v18oy85 の取得",
+      "comment" : "",
+      "properties" : {
+        "continueOnError" : false,
+        "entityId" : "live2024_live2024_profile_ENTITY_000_8hctr7s6v18oy85"
+      },
+      "mappingDefinition" : {
+        "mappingRules" : [ {
+          "id" : "14d1882b-682a-439d-a57f-fa9f21723f27",
+          "target" : "im_repositoryGetEntityData1/userDataId",
+          "source" : {
+            "type" : "value",
+            "name" : null,
+            "path" : "$variable/userDataId",
+            "arguments" : null
+          }
+        } ]
+      }
+    }, {
+      "executeId" : "im_end1",
+      "alias" : null,
+      "key" : {
+        "type" : "application",
+        "id" : "im_end",
+        "version" : null
+      },
+      "label" : "終了",
+      "comment" : "",
+      "properties" : { },
+      "mappingDefinition" : {
+        "mappingRules" : [ {
+          "id" : "04dd993e-ddcf-4c28-9127-75adce0a9192",
+          "target" : "$output/isCopied",
+          "source" : {
+            "type" : "value",
+            "name" : null,
+            "path" : "$variable/isCopied",
+            "arguments" : null
+          }
+        }, {
+          "id" : "c9089e28-f7be-4947-b78b-4edce36a74ff",
+          "target" : "$output/userData",
+          "source" : {
+            "type" : "value",
+            "name" : null,
+            "path" : "im_repositoryGetEntityData1",
+            "arguments" : null
+          }
+        } ]
+      }
+    }, {
+      "executeId" : "im_start_im_gateway1",
+      "alias" : null,
+      "key" : {
+        "type" : "application",
+        "id" : "im_sequence",
+        "version" : null
+      },
+      "label" : null,
+      "comment" : null,
+      "properties" : {
+        "startPoint" : "im_start",
+        "endPoint" : "im_gateway1"
+      },
+      "mappingDefinition" : null
+    }, {
+      "executeId" : "im_gateway1_im_variableOperation1",
+      "alias" : null,
+      "key" : {
+        "type" : "application",
+        "id" : "im_sequence",
+        "version" : null
+      },
+      "label" : null,
+      "comment" : null,
+      "properties" : {
+        "startPoint" : "im_gateway1",
+        "endPoint" : "im_variableOperation1",
+        "condition" : "${!isEmpty($input.request.imwOriginalUserDataId)}"
+      },
+      "mappingDefinition" : null
+    }, {
+      "executeId" : "im_gateway1_im_variableOperation2",
+      "alias" : null,
+      "key" : {
+        "type" : "application",
+        "id" : "im_sequence",
+        "version" : null
+      },
+      "label" : null,
+      "comment" : null,
+      "properties" : {
+        "startPoint" : "im_gateway1",
+        "endPoint" : "im_variableOperation2"
+      },
+      "mappingDefinition" : null
+    }, {
+      "executeId" : "im_variableOperation1_im_repositoryGetEntityData1",
+      "alias" : null,
+      "key" : {
+        "type" : "application",
+        "id" : "im_sequence",
+        "version" : null
+      },
+      "label" : null,
+      "comment" : null,
+      "properties" : {
+        "startPoint" : "im_variableOperation1",
+        "endPoint" : "im_repositoryGetEntityData1"
+      },
+      "mappingDefinition" : null
+    }, {
+      "executeId" : "im_variableOperation2_im_repositoryGetEntityData1",
+      "alias" : null,
+      "key" : {
+        "type" : "application",
+        "id" : "im_sequence",
+        "version" : null
+      },
+      "label" : null,
+      "comment" : null,
+      "properties" : {
+        "startPoint" : "im_variableOperation2",
+        "endPoint" : "im_repositoryGetEntityData1"
+      },
+      "mappingDefinition" : null
+    }, {
+      "executeId" : "im_repositoryGetEntityData1_im_end1",
+      "alias" : null,
+      "key" : {
+        "type" : "application",
+        "id" : "im_sequence",
+        "version" : null
+      },
+      "label" : null,
+      "comment" : null,
+      "properties" : {
+        "startPoint" : "im_repositoryGetEntityData1",
+        "endPoint" : "im_end1"
+      },
+      "mappingDefinition" : null
+    } ],
+    "inputDataDefinition" : {
+      "entrypoint" : {
+        "typeId" : "root",
+        "basic" : false,
+        "required" : false,
+        "listingType" : "none"
+      },
+      "typeDefinitions" : [ {
+        "id" : "root",
+        "properties" : [ {
+          "typeId" : "im_logic_object_1",
+          "name" : "request",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : false
+        } ]
+      }, {
+        "id" : "im_logic_object_1",
+        "properties" : [ {
+          "typeId" : "string",
+          "name" : "imwUserDataId",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        }, {
+          "typeId" : "string",
+          "name" : "imwFlowId",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        }, {
+          "typeId" : "string",
+          "name" : "imwApplyBaseDate",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        }, {
+          "typeId" : "string",
+          "name" : "imwAuthUserCode",
+          "description" : null,
+          "listingType" : "list",
+          "required" : false,
+          "basic" : true
+        }, {
+          "typeId" : "string",
+          "name" : "imwPageType",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        }, {
+          "typeId" : "string",
+          "name" : "imwSystemMatterId",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        }, {
+          "typeId" : "string",
+          "name" : "imwNodeId",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        }, {
+          "typeId" : "string",
+          "name" : "imwOriginalUserDataId",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        } ]
+      }, {
+        "id" : "string",
+        "properties" : [ ]
+      } ]
+    },
+    "outputDataDefinition" : {
+      "entrypoint" : {
+        "typeId" : "root",
+        "basic" : false,
+        "required" : false,
+        "listingType" : "none"
+      },
+      "typeDefinitions" : [ {
+        "id" : "root",
+        "properties" : [ {
+          "typeId" : "im_logic_object_1",
+          "name" : "userData",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : false
+        }, {
+          "typeId" : "boolean",
+          "name" : "isCopied",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        } ]
+      }, {
+        "id" : "im_logic_object_1",
+        "properties" : [ {
+          "typeId" : "string",
+          "name" : "name_DICTIONARY_001",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        }, {
+          "typeId" : "double",
+          "name" : "age_DICTIONARY_002",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        }, {
+          "typeId" : "string",
+          "name" : "address_DICTIONARY_003",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        }, {
+          "typeId" : "string",
+          "name" : "mail",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        }, {
+          "typeId" : "im_logic_object_2",
+          "name" : "live2024_profile_detail_ENTITY_001",
+          "description" : null,
+          "listingType" : "list",
+          "required" : false,
+          "basic" : true
+        } ]
+      }, {
+        "id" : "im_logic_object_2",
+        "properties" : [ {
+          "typeId" : "string",
+          "name" : "userDataId",
+          "description" : null,
+          "listingType" : "none",
+          "required" : true,
+          "basic" : true
+        }, {
+          "typeId" : "string",
+          "name" : "subTableId",
+          "description" : null,
+          "listingType" : "none",
+          "required" : true,
+          "basic" : true
+        }, {
+          "typeId" : "string",
+          "name" : "hobby_DICTIONARY_004",
+          "description" : null,
+          "listingType" : "none",
+          "required" : false,
+          "basic" : true
+        } ]
+      }, {
+        "id" : "string",
+        "properties" : [ ]
+      }, {
+        "id" : "boolean",
+        "properties" : [ ]
+      }, {
+        "id" : "double",
+        "properties" : [ ]
+      }, {
+        "id" : "any",
+        "properties" : [ ]
+      }, {
+        "id" : "map",
+        "properties" : [ ]
+      } ]
+    },
+    "additional" : {
+      "ui" : {
+        "version" : 2,
+        "graph" : {
+          "cells" : [ {
+            "type" : "devs.CommentModel",
+            "size" : {
+              "width" : 680,
+              "height" : 50
+            },
+            "inPorts" : [ "in" ],
+            "outPorts" : [ "out" ],
+            "position" : {
+              "x" : 90,
+              "y" : 280
+            },
+            "id" : "08fe0490-5043-43e5-b48b-fa8f0ac008a7",
+            "z" : 937,
+            "attrs" : {
+              "rect.body" : {
+                "width" : 680,
+                "height" : 50
+              },
+              "rect.icon" : {
+                "height" : 50
+              },
+              "rect.title" : {
+                "width" : 670
+              },
+              "rect.label" : {
+                "width" : 670,
+                "height" : 50
+              },
+              "text.title" : {
+                "text" : "im_comment1"
+              },
+              "text.label" : {
+                "text" : "コピー新規機能が利用された際には、コピー元案件のユーザデータIDをデータ取得条件に設定します。\nコピー元案件に添付ファイル情報が存在していても添付ファイルはコピーしません。"
+              },
+              ".inPorts>.port0>.port-label" : {
+                "text" : "in"
+              },
+              ".inPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "in",
+                  "type" : "in"
+                }
+              },
+              ".outPorts>.port0>.port-label" : {
+                "text" : "out"
+              },
+              ".outPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "out",
+                  "type" : "out"
+                }
+              }
+            }
+          }, {
+            "type" : "devs.StartModel",
+            "size" : {
+              "width" : 200,
+              "height" : 50
+            },
+            "inPorts" : [ "in" ],
+            "outPorts" : [ "out" ],
+            "position" : {
+              "x" : 320,
+              "y" : 30
+            },
+            "id" : "95577916-72e1-4d6b-813e-9bd0d6cff08b",
+            "z" : 976,
+            "attrs" : {
+              "rect.title" : {
+                "width" : 150
+              },
+              "text.title" : {
+                "text" : "im_start"
+              },
+              "text.label" : {
+                "text" : "開始"
+              },
+              ".inPorts>.port0>.port-label" : {
+                "text" : "in"
+              },
+              ".inPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "in",
+                  "type" : "in"
+                }
+              },
+              ".outPorts>.port0>.port-label" : {
+                "text" : "out"
+              },
+              ".outPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "out",
+                  "type" : "out"
+                }
+              }
+            }
+          }, {
+            "type" : "devs.GatewayModel",
+            "size" : {
+              "width" : 400,
+              "height" : 50
+            },
+            "inPorts" : [ "in" ],
+            "outPorts" : [ "then", "else" ],
+            "position" : {
+              "x" : 220,
+              "y" : 150
+            },
+            "id" : "78679ce5-d602-4955-9f4c-572335719a17",
+            "z" : 978,
+            "attrs" : {
+              "rect.body" : {
+                "width" : 400
+              },
+              "rect.title" : {
+                "width" : 350
+              },
+              "rect.label" : {
+                "width" : 350
+              },
+              "text.title" : {
+                "text" : "im_gateway1"
+              },
+              "text.label" : {
+                "text" : "案件一覧のコピー新規機能による画面遷移のとき"
+              },
+              ".inPorts>.port0>.port-label" : {
+                "text" : "in"
+              },
+              ".inPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "in",
+                  "type" : "in"
+                }
+              },
+              ".outPorts>.port0>.port-label" : {
+                "text" : "then"
+              },
+              ".outPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "then",
+                  "type" : "out"
+                }
+              },
+              ".outPorts>.port1>.port-label" : {
+                "text" : "else"
+              },
+              ".outPorts>.port1>.port-body" : {
+                "port" : {
+                  "id" : "else",
+                  "type" : "out"
+                }
+              }
+            }
+          }, {
+            "type" : "link",
+            "source" : {
+              "id" : "95577916-72e1-4d6b-813e-9bd0d6cff08b",
+              "port" : "out"
+            },
+            "target" : {
+              "id" : "78679ce5-d602-4955-9f4c-572335719a17",
+              "port" : "in"
+            },
+            "id" : "7962971b-d992-4fb7-9b11-0c7f970c3fd4",
+            "z" : 981,
+            "attrs" : {
+              ".link-tools>.link-tool>.tool-remove" : {
+                "display" : ""
+              }
+            }
+          }, {
+            "type" : "devs.ProcModel",
+            "size" : {
+              "width" : 360,
+              "height" : 50
+            },
+            "inPorts" : [ "in" ],
+            "outPorts" : [ "out" ],
+            "position" : {
+              "x" : 70,
+              "y" : 390
+            },
+            "id" : "52d813b2-afda-408e-8064-910b96e8ed69",
+            "z" : 982,
+            "attrs" : {
+              "rect.body" : {
+                "width" : 360
+              },
+              "rect.title" : {
+                "width" : 310
+              },
+              "rect.label" : {
+                "width" : 310
+              },
+              "text.title" : {
+                "text" : "im_variableOperation1"
+              },
+              "text.label" : {
+                "text" : "コピー元案件データ取得用パラメータ設定"
+              },
+              ".inPorts>.port0>.port-label" : {
+                "text" : "in"
+              },
+              ".inPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "in",
+                  "type" : "in"
+                }
+              },
+              ".outPorts>.port0>.port-label" : {
+                "text" : "out"
+              },
+              ".outPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "out",
+                  "type" : "out"
+                }
+              }
+            }
+          }, {
+            "type" : "link",
+            "source" : {
+              "id" : "78679ce5-d602-4955-9f4c-572335719a17",
+              "port" : "then"
+            },
+            "target" : {
+              "id" : "52d813b2-afda-408e-8064-910b96e8ed69",
+              "port" : "in"
+            },
+            "id" : "aa8cfe5c-2546-49fe-b283-e96f47e68598",
+            "z" : 984,
+            "attrs" : {
+              ".link-tools>.link-tool>.tool-remove" : {
+                "display" : ""
+              }
+            }
+          }, {
+            "type" : "devs.ProcModel",
+            "size" : {
+              "width" : 240,
+              "height" : 50
+            },
+            "inPorts" : [ "in" ],
+            "outPorts" : [ "out" ],
+            "position" : {
+              "x" : 470,
+              "y" : 390
+            },
+            "id" : "8882c568-ca23-4a20-a54e-4f983b6f70ad",
+            "z" : 985,
+            "attrs" : {
+              "rect.body" : {
+                "width" : 240
+              },
+              "rect.title" : {
+                "width" : 190
+              },
+              "rect.label" : {
+                "width" : 190
+              },
+              "text.title" : {
+                "text" : "im_variableOperation2"
+              },
+              "text.label" : {
+                "text" : "通常用パラメータ設定"
+              },
+              ".inPorts>.port0>.port-label" : {
+                "text" : "in"
+              },
+              ".inPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "in",
+                  "type" : "in"
+                }
+              },
+              ".outPorts>.port0>.port-label" : {
+                "text" : "out"
+              },
+              ".outPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "out",
+                  "type" : "out"
+                }
+              }
+            }
+          }, {
+            "type" : "link",
+            "source" : {
+              "id" : "78679ce5-d602-4955-9f4c-572335719a17",
+              "port" : "else"
+            },
+            "target" : {
+              "id" : "8882c568-ca23-4a20-a54e-4f983b6f70ad",
+              "port" : "in"
+            },
+            "id" : "880651c5-fefd-4cbc-af9b-0fcf44f39fa4",
+            "z" : 987,
+            "attrs" : {
+              ".link-tools>.link-tool>.tool-remove" : {
+                "display" : ""
+              }
+            }
+          }, {
+            "type" : "devs.ProcModel",
+            "size" : {
+              "width" : 480,
+              "height" : 50
+            },
+            "inPorts" : [ "in" ],
+            "outPorts" : [ "out" ],
+            "position" : {
+              "x" : 300,
+              "y" : 530
+            },
+            "id" : "38d6fc69-5dd6-4c42-8314-70cf47b1e9c8",
+            "z" : 994,
+            "attrs" : {
+              "rect.body" : {
+                "width" : 480,
+                "fill" : "#424242"
+              },
+              "rect.icon" : {
+                "fill" : "#424242"
+              },
+              "rect.title" : {
+                "width" : 430,
+                "fill" : "#757575"
+              },
+              "rect.label" : {
+                "width" : 430,
+                "fill" : "#9e9e9e"
+              },
+              "text.title" : {
+                "text" : "im_repositoryGetEntityData1"
+              },
+              "text.label" : {
+                "text" : "live2024_live2024_profile_ENTITY_000_8hctr7s6v18oy85 の取得"
+              },
+              ".inPorts>.port0>.port-label" : {
+                "text" : "in"
+              },
+              ".inPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "in",
+                  "type" : "in"
+                }
+              },
+              ".outPorts>.port0>.port-label" : {
+                "text" : "out"
+              },
+              ".outPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "out",
+                  "type" : "out"
+                }
+              }
+            }
+          }, {
+            "type" : "link",
+            "source" : {
+              "id" : "52d813b2-afda-408e-8064-910b96e8ed69",
+              "port" : "out"
+            },
+            "target" : {
+              "id" : "38d6fc69-5dd6-4c42-8314-70cf47b1e9c8",
+              "port" : "in"
+            },
+            "id" : "ce8a020a-6c82-4330-af25-44fa92e938ef",
+            "z" : 995,
+            "attrs" : {
+              ".link-tools>.link-tool>.tool-remove" : {
+                "display" : ""
+              }
+            }
+          }, {
+            "type" : "link",
+            "source" : {
+              "id" : "8882c568-ca23-4a20-a54e-4f983b6f70ad",
+              "port" : "out"
+            },
+            "target" : {
+              "id" : "38d6fc69-5dd6-4c42-8314-70cf47b1e9c8",
+              "port" : "in"
+            },
+            "id" : "50277793-d2da-4e66-b7f7-ff9475d38d2a",
+            "z" : 996,
+            "attrs" : {
+              ".link-tools>.link-tool>.tool-remove" : {
+                "display" : ""
+              }
+            }
+          }, {
+            "type" : "devs.EndModel",
+            "size" : {
+              "width" : 200,
+              "height" : 50
+            },
+            "inPorts" : [ "in" ],
+            "outPorts" : [ "out" ],
+            "position" : {
+              "x" : 320,
+              "y" : 660
+            },
+            "id" : "12a8f436-2e9c-4f67-b1fd-6efa6d459b69",
+            "z" : 998,
+            "attrs" : {
+              "rect.title" : {
+                "width" : 150
+              },
+              "text.title" : {
+                "text" : "im_end1"
+              },
+              "text.label" : {
+                "text" : "終了"
+              },
+              ".inPorts>.port0>.port-label" : {
+                "text" : "in"
+              },
+              ".inPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "in",
+                  "type" : "in"
+                }
+              },
+              ".outPorts>.port0>.port-label" : {
+                "text" : "out"
+              },
+              ".outPorts>.port0>.port-body" : {
+                "port" : {
+                  "id" : "out",
+                  "type" : "out"
+                }
+              }
+            }
+          }, {
+            "type" : "link",
+            "source" : {
+              "id" : "38d6fc69-5dd6-4c42-8314-70cf47b1e9c8",
+              "port" : "out"
+            },
+            "target" : {
+              "id" : "12a8f436-2e9c-4f67-b1fd-6efa6d459b69",
+              "port" : "in"
+            },
+            "id" : "ac0be08f-8a6b-4996-9d83-498c07b01539",
+            "z" : 999,
+            "attrs" : {
+              ".link-tools>.link-tool>.tool-remove" : {
+                "display" : ""
+              }
+            }
+          } ]
+        },
+        "dataMap" : {
+          "08fe0490-5043-43e5-b48b-fa8f0ac008a7" : {
+            "metadata" : {
+              "key" : {
+                "id" : "im_comment",
+                "type" : "ui",
+                "version" : 1
+              },
+              "elementProperties" : null,
+              "inputDataDefinition" : null,
+              "outputDataDefinition" : null
+            },
+            "common" : {
+              "executeId" : "im_comment1",
+              "alias" : "im_comment1",
+              "label" : "コピー新規機能が利用された際には、コピー元案件のユーザデータIDをデータ取得条件に設定します。\nコピー元案件に添付ファイル情報が存在していても添付ファイルはコピーしません。",
+              "comment" : ""
+            },
+            "typical" : { },
+            "mapping" : {
+              "inputKeys" : [ "$input", "$variable", "$const" ],
+              "additionalKeys" : [ ],
+              "json" : { }
+            }
+          },
+          "95577916-72e1-4d6b-813e-9bd0d6cff08b" : {
+            "metadata" : {
+              "key" : {
+                "type" : "application",
+                "id" : "im_start"
+              },
+              "elementProperties" : [ {
+                "propertyName" : "executeId",
+                "enable" : true,
+                "required" : true,
+                "array" : false,
+                "label" : "executeId",
+                "options" : [ ]
+              }, {
+                "propertyName" : "alias",
+                "enable" : true,
+                "required" : false,
+                "array" : false,
+                "label" : "alias",
+                "options" : [ ]
+              } ],
+              "inputDataDefinition" : null,
+              "outputDataDefinition" : null
+            },
+            "common" : {
+              "executeId" : "im_start",
+              "alias" : "im_start",
+              "label" : "開始",
+              "comment" : ""
+            },
+            "typical" : { },
+            "mapping" : {
+              "inputKeys" : [ "$input", "$variable", "$const" ],
+              "additionalKeys" : [ ],
+              "json" : { }
+            }
+          },
+          "78679ce5-d602-4955-9f4c-572335719a17" : {
+            "metadata" : {
+              "key" : {
+                "type" : "application",
+                "id" : "im_gateway"
+              },
+              "elementProperties" : [ {
+                "propertyName" : "executeId",
+                "enable" : true,
+                "required" : true,
+                "array" : false,
+                "label" : "executeId",
+                "options" : [ ]
+              }, {
+                "propertyName" : "alias",
+                "enable" : true,
+                "required" : false,
+                "array" : false,
+                "label" : "alias",
+                "options" : [ ]
+              }, {
+                "propertyName" : "defaultRoot",
+                "enable" : false,
+                "required" : true,
+                "array" : false,
+                "label" : "defaultRoot",
+                "options" : [ ]
+              }, {
+                "propertyName" : "condition",
+                "enable" : false,
+                "required" : false,
+                "array" : false,
+                "label" : "条件式（EL式）",
+                "options" : [ ]
+              } ],
+              "inputDataDefinition" : null,
+              "outputDataDefinition" : null
+            },
+            "common" : {
+              "executeId" : "im_gateway1",
+              "alias" : "im_gateway1",
+              "label" : "案件一覧のコピー新規機能による画面遷移のとき",
+              "comment" : ""
+            },
+            "typical" : {
+              "@then" : "${!isEmpty($input.request.imwOriginalUserDataId)}"
+            },
+            "mapping" : {
+              "inputKeys" : [ "$input", "$variable", "$const" ],
+              "additionalKeys" : [ ],
+              "json" : { }
+            }
+          },
+          "52d813b2-afda-408e-8064-910b96e8ed69" : {
+            "metadata" : {
+              "key" : {
+                "type" : "application",
+                "id" : "im_variableOperation"
+              },
+              "elementProperties" : [ {
+                "propertyName" : "executeId",
+                "enable" : true,
+                "required" : true,
+                "array" : false,
+                "label" : "executeId",
+                "options" : [ ]
+              }, {
+                "propertyName" : "alias",
+                "enable" : true,
+                "required" : false,
+                "array" : false,
+                "label" : "alias",
+                "options" : [ ]
+              }, {
+                "propertyName" : "continueOnError",
+                "enable" : true,
+                "required" : false,
+                "array" : false,
+                "type" : "flag",
+                "label" : "エラーハンドリング",
+                "text" : "エラーでも処理を継続する",
+                "options" : [ {
+                  "name" : "continueOnError",
+                  "label" : "continueOnError",
+                  "value" : "true"
+                } ]
+              } ],
+              "inputDataDefinition" : {
+                "entrypoint" : {
+                  "typeId" : "map",
+                  "basic" : true,
+                  "required" : false,
+                  "listingType" : "none"
+                },
+                "typeDefinitions" : [ {
+                  "id" : "map",
+                  "properties" : [ ]
+                }, {
+                  "id" : "any",
+                  "properties" : [ ]
+                } ]
+              },
+              "outputDataDefinition" : {
+                "entrypoint" : {
+                  "typeId" : "any",
+                  "basic" : true,
+                  "required" : false,
+                  "listingType" : "none"
+                },
+                "typeDefinitions" : [ {
+                  "id" : "any",
+                  "properties" : [ ]
+                } ]
+              }
+            },
+            "common" : {
+              "executeId" : "im_variableOperation1",
+              "alias" : "im_variableOperation1",
+              "label" : "コピー元案件データ取得用パラメータ設定",
+              "comment" : "",
+              "mapping" : null
+            },
+            "typical" : {
+              "continueOnError" : false
+            },
+            "mapping" : {
+              "inputKeys" : [ "$input", "$const" ],
+              "additionalKeys" : [ ],
+              "json" : {
+                "version" : 1,
+                "attrs" : { },
+                "connectors" : [ {
+                  "id" : "a3b7fbfd-31ea-468e-8898-d25bac5d91dc",
+                  "source" : {
+                    "id" : "fece3bd2-2754-4c55-a2f1-89e2a72e9bcb",
+                    "type" : "$input",
+                    "path" : "$input\trequest\timwOriginalUserDataId",
+                    "port" : "out"
+                  },
+                  "target" : {
+                    "id" : "c391b018-0560-47e2-a469-4aa6e837c5f7",
+                    "type" : "$output",
+                    "path" : "$variable\tuserDataId",
+                    "port" : "in"
+                  }
+                }, {
+                  "id" : "49965baf-d625-46e9-bd20-97506c6cbb9d",
+                  "source" : {
+                    "id" : "8c765989-a041-4aba-b4d9-4b7f077a2ea6",
+                    "type" : "$input",
+                    "path" : "$const\tTRUE",
+                    "port" : "out"
+                  },
+                  "target" : {
+                    "id" : "e6477c12-9e51-4775-b063-76ff48fa9836",
+                    "type" : "$output",
+                    "path" : "$variable\tisCopied",
+                    "port" : "in"
+                  }
+                } ],
+                "size" : {
+                  "width" : 400,
+                  "height" : 500
+                }
+              }
+            }
+          },
+          "8882c568-ca23-4a20-a54e-4f983b6f70ad" : {
+            "metadata" : {
+              "key" : {
+                "type" : "application",
+                "id" : "im_variableOperation"
+              },
+              "elementProperties" : [ {
+                "propertyName" : "executeId",
+                "enable" : true,
+                "required" : true,
+                "array" : false,
+                "label" : "executeId",
+                "options" : [ ]
+              }, {
+                "propertyName" : "alias",
+                "enable" : true,
+                "required" : false,
+                "array" : false,
+                "label" : "alias",
+                "options" : [ ]
+              }, {
+                "propertyName" : "continueOnError",
+                "enable" : true,
+                "required" : false,
+                "array" : false,
+                "type" : "flag",
+                "label" : "エラーハンドリング",
+                "text" : "エラーでも処理を継続する",
+                "options" : [ {
+                  "name" : "continueOnError",
+                  "label" : "continueOnError",
+                  "value" : "true"
+                } ]
+              } ],
+              "inputDataDefinition" : {
+                "entrypoint" : {
+                  "typeId" : "map",
+                  "basic" : true,
+                  "required" : false,
+                  "listingType" : "none"
+                },
+                "typeDefinitions" : [ {
+                  "id" : "map",
+                  "properties" : [ ]
+                }, {
+                  "id" : "any",
+                  "properties" : [ ]
+                } ]
+              },
+              "outputDataDefinition" : {
+                "entrypoint" : {
+                  "typeId" : "any",
+                  "basic" : true,
+                  "required" : false,
+                  "listingType" : "none"
+                },
+                "typeDefinitions" : [ {
+                  "id" : "any",
+                  "properties" : [ ]
+                } ]
+              }
+            },
+            "common" : {
+              "executeId" : "im_variableOperation2",
+              "alias" : "im_variableOperation2",
+              "label" : "通常用パラメータ設定",
+              "comment" : "",
+              "mapping" : null
+            },
+            "typical" : {
+              "continueOnError" : false
+            },
+            "mapping" : {
+              "inputKeys" : [ "$input", "$const" ],
+              "additionalKeys" : [ ],
+              "json" : {
+                "version" : 1,
+                "attrs" : { },
+                "connectors" : [ {
+                  "id" : "7a49a180-a94a-459b-a2b1-eda6cd1f2837",
+                  "source" : {
+                    "id" : "6d21454d-b0bb-4d44-8b43-48eeb781dd67",
+                    "type" : "$input",
+                    "path" : "$input\trequest\timwUserDataId",
+                    "port" : "out"
+                  },
+                  "target" : {
+                    "id" : "9e5d4eb0-acaa-413e-90b0-8c17ba8e2f4f",
+                    "type" : "$output",
+                    "path" : "$variable\tuserDataId",
+                    "port" : "in"
+                  }
+                }, {
+                  "id" : "9ae9e0e0-7598-4677-ad4a-521f8cbfa760",
+                  "source" : {
+                    "id" : "e35d32dc-2a1d-4011-8d71-5f00d50e72dd",
+                    "type" : "$input",
+                    "path" : "$const\tFALSE",
+                    "port" : "out"
+                  },
+                  "target" : {
+                    "id" : "9bedf7db-a2ed-45e4-940c-961405287582",
+                    "type" : "$output",
+                    "path" : "$variable\tisCopied",
+                    "port" : "in"
+                  }
+                } ],
+                "size" : {
+                  "width" : 400,
+                  "height" : 500
+                }
+              }
+            }
+          },
+          "38d6fc69-5dd6-4c42-8314-70cf47b1e9c8" : {
+            "metadata" : {
+              "key" : {
+                "type" : "application",
+                "id" : "im_repositoryGetEntityData"
+              },
+              "elementProperties" : [ {
+                "propertyName" : "executeId",
+                "enable" : true,
+                "required" : true,
+                "array" : false,
+                "label" : "executeId",
+                "options" : [ ]
+              }, {
+                "propertyName" : "alias",
+                "enable" : true,
+                "required" : false,
+                "array" : false,
+                "label" : "alias",
+                "options" : [ ]
+              }, {
+                "propertyName" : "continueOnError",
+                "enable" : true,
+                "required" : false,
+                "array" : false,
+                "type" : "flag",
+                "label" : "エラーハンドリング",
+                "text" : "エラーでも処理を継続する",
+                "options" : [ {
+                  "name" : "continueOnError",
+                  "label" : "continueOnError",
+                  "value" : "true"
+                } ]
+              }, {
+                "propertyName" : "entityId",
+                "enable" : true,
+                "required" : true,
+                "array" : false,
+                "label" : "エンティティID",
+                "options" : [ ]
+              } ],
+              "inputDataDefinition" : {
+                "entrypoint" : {
+                  "typeId" : "imrepo_entity_key_live2024_live2024_profile_ENTITY_000_8hctr7s6v18oy85",
+                  "basic" : false,
+                  "required" : false,
+                  "listingType" : "none"
+                },
+                "typeDefinitions" : [ {
+                  "id" : "string",
+                  "properties" : [ ]
+                }, {
+                  "id" : "imrepo_entity_key_live2024_live2024_profile_ENTITY_000_8hctr7s6v18oy85",
+                  "properties" : [ {
+                    "typeId" : "string",
+                    "name" : "userDataId",
+                    "listingType" : "none",
+                    "required" : true,
+                    "basic" : true
+                  } ]
+                } ]
+              },
+              "outputDataDefinition" : {
+                "entrypoint" : {
+                  "typeId" : "imrepo_entity_live2024_live2024_profile_ENTITY_000_8hctr7s6v18oy85",
+                  "basic" : false,
+                  "required" : false,
+                  "listingType" : "none"
+                },
+                "typeDefinitions" : [ {
+                  "id" : "string",
+                  "properties" : [ ]
+                }, {
+                  "id" : "double",
+                  "properties" : [ ]
+                }, {
+                  "id" : "imrepo_entity_live2024_live2024_profile_detail_ENTITY_001_8hctr7s6v18oz85",
+                  "properties" : [ {
+                    "typeId" : "string",
+                    "name" : "userDataId",
+                    "listingType" : "none",
+                    "required" : true,
+                    "basic" : true
+                  }, {
+                    "typeId" : "string",
+                    "name" : "subTableId",
+                    "listingType" : "none",
+                    "required" : true,
+                    "basic" : true
+                  }, {
+                    "typeId" : "string",
+                    "name" : "hobby_DICTIONARY_004",
+                    "listingType" : "none",
+                    "required" : false,
+                    "basic" : true
+                  } ]
+                }, {
+                  "id" : "imrepo_entity_live2024_live2024_profile_ENTITY_000_8hctr7s6v18oy85",
+                  "properties" : [ {
+                    "typeId" : "string",
+                    "name" : "userDataId",
+                    "listingType" : "none",
+                    "required" : true,
+                    "basic" : true
+                  }, {
+                    "typeId" : "string",
+                    "name" : "name_DICTIONARY_001",
+                    "listingType" : "none",
+                    "required" : false,
+                    "basic" : true
+                  }, {
+                    "typeId" : "double",
+                    "name" : "age_DICTIONARY_002",
+                    "listingType" : "none",
+                    "required" : false,
+                    "basic" : true
+                  }, {
+                    "typeId" : "string",
+                    "name" : "address_DICTIONARY_003",
+                    "listingType" : "none",
+                    "required" : false,
+                    "basic" : true
+                  }, {
+                    "typeId" : "string",
+                    "name" : "mail",
+                    "listingType" : "none",
+                    "required" : false,
+                    "basic" : true
+                  }, {
+                    "typeId" : "imrepo_entity_live2024_live2024_profile_detail_ENTITY_001_8hctr7s6v18oz85",
+                    "name" : "live2024_profile_detail_ENTITY_001",
+                    "listingType" : "list",
+                    "required" : false,
+                    "basic" : false
                   } ]
                 } ]
               }
