@@ -1,0 +1,536 @@
+{
+  "application" : {
+    "applicationId" : "live2024",
+    "applicationName" : "live2024",
+    "description" : "",
+    "enabledFlag" : "1",
+    "categoryId" : "im-craftsman-applications",
+    "sortNumber" : 0,
+    "localizedApplicationName" : { },
+    "localizedDescription" : { },
+    "resourceRelations" : [ {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://contents/live2024-wf-content"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-logic://flows/live2024-delete-user-data"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-logic://flows/live2024-get-user-data"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-logic://flows/live2024-wf-action"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-logic://flows/live2024-wf-delete-activematters"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-logic://flows/live2024-wf-delete-archivematters"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-logic://flows/live2024-wf-delete-completedmatters"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-repository://entity/live2024_live2024_profile_ENTITY_000_8hctnfnnq16pp85"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-repository://entity/live2024_live2024_profile_detail_ENTITY_001_8hctnfnnq16pq85"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-workflow://flowdefinitions/8hctnfnbk16pd85-flow"
+    } ],
+    "resources" : [ {
+      "resourceId" : "im-bloommaker://contents/live2024-wf-content",
+      "description" : "「シンプルなワークフロー」テンプレートから作成されたWF画面のコンテンツです。",
+      "definitionCategory" : "im-bloommaker://contents",
+      "resourceName" : "live2024 WF画面",
+      "resourceKey1" : "live2024-wf-content",
+      "resourceKey2" : null,
+      "resourceKey3" : null,
+      "localizedResourceName" : {
+        "zh_CN" : "live2024 WF页面",
+        "en" : "live2024 WF screen",
+        "ja" : "live2024 WF画面"
+      },
+      "localizedDescription" : {
+        "zh_CN" : "根据「简单的工作流」模板创建的WF页面的内容。",
+        "en" : "This WF screen content is created from the \"Simple Workflow\" template.",
+        "ja" : "「シンプルなワークフロー」テンプレートから作成されたWF画面のコンテンツです。"
+      }
+    }, {
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "description" : "「シンプルなワークフロー」テンプレートから作成されたWF画面のルーティング定義です。",
+      "definitionCategory" : "im-bloommaker://routes",
+      "resourceName" : "live2024 WF画面",
+      "resourceKey1" : "live2024-wf-route",
+      "resourceKey2" : null,
+      "resourceKey3" : null,
+      "localizedResourceName" : {
+        "zh_CN" : "live2024 WF页面",
+        "en" : "live2024 WF screen",
+        "ja" : "live2024 WF画面"
+      },
+      "localizedDescription" : {
+        "zh_CN" : "根据「简单的工作流」模板创建的WF页面的路由定义。",
+        "en" : "This WF screen routing definition is created from the \"Simple Workflow\" template.",
+        "ja" : "「シンプルなワークフロー」テンプレートから作成されたWF画面のルーティング定義です。"
+      }
+    }, {
+      "resourceId" : "im-logic://flows/live2024-delete-user-data",
+      "description" : "「シンプルなワークフロー」テンプレートから作成された ユーザデータ削除処理です。",
+      "definitionCategory" : "im-logic://flows",
+      "resourceName" : "live2024 ユーザデータ削除処理",
+      "resourceKey1" : "live2024-delete-user-data",
+      "resourceKey2" : null,
+      "resourceKey3" : null,
+      "localizedResourceName" : {
+        "zh_CN" : "live2024用户数据删除处理",
+        "en" : "live2024 user data deletion process",
+        "ja" : "live2024 ユーザデータ削除処理"
+      },
+      "localizedDescription" : {
+        "zh_CN" : null,
+        "en" : null,
+        "ja" : null
+      }
+    }, {
+      "resourceId" : "im-logic://flows/live2024-get-user-data",
+      "description" : "「シンプルなワークフロー」テンプレートから作成されたユーザデータ取得処理です。",
+      "definitionCategory" : "im-logic://flows",
+      "resourceName" : "live2024 ユーザデータ取得処理",
+      "resourceKey1" : "live2024-get-user-data",
+      "resourceKey2" : null,
+      "resourceKey3" : null,
+      "localizedResourceName" : {
+        "zh_CN" : "live2024用户数据获取处理",
+        "en" : "live2024 user data acquisition process",
+        "ja" : "live2024 ユーザデータ取得処理"
+      },
+      "localizedDescription" : {
+        "zh_CN" : null,
+        "en" : null,
+        "ja" : null
+      }
+    }, {
+      "resourceId" : "im-logic://flows/live2024-wf-action",
+      "description" : "「シンプルなワークフロー」テンプレートから作成された WFアクション処理です。",
+      "definitionCategory" : "im-logic://flows",
+      "resourceName" : "live2024 WFアクション処理",
+      "resourceKey1" : "live2024-wf-action",
+      "resourceKey2" : null,
+      "resourceKey3" : null,
+      "localizedResourceName" : {
+        "zh_CN" : "live2024 WFAction处理",
+        "en" : "live2024 WF action process",
+        "ja" : "live2024 WFアクション処理"
+      },
+      "localizedDescription" : {
+        "zh_CN" : null,
+        "en" : null,
+        "ja" : null
+      }
+    }, {
+      "resourceId" : "im-logic://flows/live2024-wf-delete-activematters",
+      "description" : "「シンプルなワークフロー」テンプレートから作成されたWF未完了案件削除処理です。",
+      "definitionCategory" : "im-logic://flows",
+      "resourceName" : "live2024 WF未完了案件削除処理",
+      "resourceKey1" : "live2024-wf-delete-activematters",
+      "resourceKey2" : null,
+      "resourceKey3" : null,
+      "localizedResourceName" : {
+        "zh_CN" : "live2024 WF未结束案件删除处理",
+        "en" : "live2024 WF incomplete matter deletion process",
+        "ja" : "live2024 WF未完了案件削除処理"
+      },
+      "localizedDescription" : {
+        "zh_CN" : null,
+        "en" : null,
+        "ja" : null
+      }
+    }, {
+      "resourceId" : "im-logic://flows/live2024-wf-delete-archivematters",
+      "description" : "「シンプルなワークフロー」テンプレートから作成されたWF過去案件削除処理です。",
+      "definitionCategory" : "im-logic://flows",
+      "resourceName" : "live2024 WF過去案件削除処理",
+      "resourceKey1" : "live2024-wf-delete-archivematters",
+      "resourceKey2" : null,
+      "resourceKey3" : null,
+      "localizedResourceName" : {
+        "zh_CN" : "live2024 WF过去案件删除处理",
+        "en" : "live2024 WF past matter deletion process",
+        "ja" : "live2024 WF過去案件削除処理"
+      },
+      "localizedDescription" : {
+        "zh_CN" : null,
+        "en" : null,
+        "ja" : null
+      }
+    }, {
+      "resourceId" : "im-logic://flows/live2024-wf-delete-completedmatters",
+      "description" : "「シンプルなワークフロー」テンプレートから作成されたWF完了案件削除処理です。",
+      "definitionCategory" : "im-logic://flows",
+      "resourceName" : "live2024 WF完了案件削除処理",
+      "resourceKey1" : "live2024-wf-delete-completedmatters",
+      "resourceKey2" : null,
+      "resourceKey3" : null,
+      "localizedResourceName" : {
+        "zh_CN" : "live2024 WF结束案件删除处理",
+        "en" : "live2024 WF complete matter deletion process",
+        "ja" : "live2024 WF完了案件削除処理"
+      },
+      "localizedDescription" : {
+        "zh_CN" : null,
+        "en" : null,
+        "ja" : null
+      }
+    }, {
+      "resourceId" : "im-repository://entity/live2024_live2024_profile_ENTITY_000_8hctnfnnq16pp85",
+      "description" : "「シンプルなワークフロー」テンプレートから作成されたエンティティです。",
+      "definitionCategory" : "im-repository://entity",
+      "resourceName" : "プロフィール",
+      "resourceKey1" : "live2024_live2024_profile_ENTITY_000_8hctnfnnq16pp85",
+      "resourceKey2" : null,
+      "resourceKey3" : null,
+      "localizedResourceName" : {
+        "zh_CN" : null,
+        "en" : null,
+        "ja" : null
+      },
+      "localizedDescription" : {
+        "zh_CN" : "根据「简单工作流」模板创建的实体。",
+        "en" : "This is the entity created from a \"Simple Workflow\" template.",
+        "ja" : "「シンプルなワークフロー」テンプレートから作成されたエンティティです。"
+      }
+    }, {
+      "resourceId" : "im-repository://entity/live2024_live2024_profile_detail_ENTITY_001_8hctnfnnq16pq85",
+      "description" : "「シンプルなワークフロー」テンプレートから作成されたエンティティです。",
+      "definitionCategory" : "im-repository://entity",
+      "resourceName" : "プロフィール詳細",
+      "resourceKey1" : "live2024_live2024_profile_detail_ENTITY_001_8hctnfnnq16pq85",
+      "resourceKey2" : null,
+      "resourceKey3" : null,
+      "localizedResourceName" : {
+        "zh_CN" : null,
+        "en" : null,
+        "ja" : null
+      },
+      "localizedDescription" : {
+        "zh_CN" : "根据「简单工作流」模板创建的实体。",
+        "en" : "This is the entity created from a \"Simple Workflow\" template.",
+        "ja" : "「シンプルなワークフロー」テンプレートから作成されたエンティティです。"
+      }
+    }, {
+      "resourceId" : "im-workflow://flowdefinitions/8hctnfnbk16pd85-flow",
+      "description" : "「シンプルなワークフロー」テンプレートから作成されたフロー定義です。",
+      "definitionCategory" : "im-workflow://flowdefinitions",
+      "resourceName" : "live2024",
+      "resourceKey1" : "8hctnfnbk16pd85-flow",
+      "resourceKey2" : null,
+      "resourceKey3" : null,
+      "localizedResourceName" : {
+        "zh_CN" : "live2024",
+        "en" : "live2024",
+        "ja" : "live2024"
+      },
+      "localizedDescription" : {
+        "zh_CN" : "根据「简单的工作流」模板创建的流程定义。",
+        "en" : "This is the flow definition created from a \"Simple Workflow\" template.",
+        "ja" : "「シンプルなワークフロー」テンプレートから作成されたフロー定義です。"
+      }
+    } ],
+    "applicationRoutes" : [ {
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "description" : "「シンプルなワークフロー」テンプレートから作成されたWF画面のルーティング定義です。",
+      "applicationId" : "live2024",
+      "method" : "POST",
+      "url" : "accel-studio-app/live2024/wf",
+      "resourceUri" : "im-bloommaker-content://contents/route/live2024-wf-route",
+      "routeName" : "live2024 WF画面",
+      "localizedRouteName" : {
+        "zh_CN" : "live2024 WF页面",
+        "en" : "live2024 WF screen",
+        "ja" : "live2024 WF画面"
+      },
+      "localizedDescription" : {
+        "zh_CN" : "根据「简单的工作流」模板创建的WF页面的路由定义。",
+        "en" : "This WF screen routing definition is created from the \"Simple Workflow\" template.",
+        "ja" : "「シンプルなワークフロー」テンプレートから作成されたWF画面のルーティング定義です。"
+      }
+    } ],
+    "categories" : [ {
+      "categoryId" : "im-craftsman-applications",
+      "categoryName" : "自動生成されたアプリケーション",
+      "sortNumber" : 0,
+      "parentId" : null,
+      "localizedCategoryName" : {
+        "zh_CN" : "自动生成的应用程序",
+        "en" : "Automatically Generated Applications",
+        "ja" : "自動生成されたアプリケーション"
+      }
+    } ],
+    "policies" : [ {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "00872807a20907c4bb06510df31cf7687f784e4d80d3a7e349993c79d1b85346",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "01b9a67f47b5a259674504e25ae1bed325899a8e1b246d4cb8e17f72a48ef2a3",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "0211c91f962bced38095678538e939db8331dcdd1d7364f6f4069d162adbf60e",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "0fb58458dec2765a5c7ee69bd2a0009c56ca8d8dabddaffd5e4bf30da077406f",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "111875f4c75127b5b85c889ad727db5ee9f6a97a4537a598cdf824d5cd73f747",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "1130bb3e51d0152f5ee0a9e9f120d292bd440a4b99e853d50e355c2e6742b517",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "1244917a86fe314438360ce9e6d6ab1f123491c54ce56e0b1fc645c0ee6468fb",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "23e85909277e9ab6be2b51d59c9a4b0f4f71041f88a3ba1730e2b612486aba6f",
+      "effect" : "PERMIT"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "2895c71c00dd4c58f6ed7ef019b447e7dbe07a3d9bfb598de808dca42d63f81c",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "28f374d9d040f59e8fd95cc48b07c5cdb82c57056713630198d89f7ef9af9efb",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "2b3925aafabf066cbf487a0013abe7bcd7bb769d99ac117ef388e507b47ccd31",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "2c481f98a0d3ff274e6859e74465ffe24cf9eaa4c8914c63e73237ce14f1d838",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "2ed889443223157d2f479beb37fb9038613bd78fd54ace4e9c5729540bfd1e4b",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "30c224029af28dfa4247b21f1433e394e19a73bad85bd9c765cd295242c61afa",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "35243d3cab031812d21c65764711cea68ea8ea5c08e4068afe75125a8020df8c",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "360eeff19e266fe697533543408d4c59e8cd7a3f39a6fa3b30714e5b8cd284eb",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "362c9e3332f55eae2f5c54d0f443e81522204f7e15bb3a8d4269fe37b7af379a",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "3a6dfb47d819bcbd575dfed5951ebdad7aa7fbaebd19d4bb504e038e41b7257f",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "3ba8abbf229e6846bc28cbd129fb873987c2fdd74fb6c4a8ece7428449707931",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "42560b4cb4dbfe62b37e9d9946160f284c74994a4d6524da53c0e36838c3fc98",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "4689f20706db2dc6b0b80c5c6ea958e09d0a4bd33fad906e5a64a1c4f35852cd",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "50491b4e82a73d05c24a632f7772d22f4c53aacca346adccdfb8d4a9664f7926",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "53dd8480156c392d43b2f249588dba7ab156cff8274f3935b1f618248d4e5c47",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "5949d8876c5bf666767a9a2b699ae54569fbcb57141f970676fdfe49727fc77b",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "5a5424f0c04660d418f4ec0f9c78a4032886a8aebc8ec07350a66425ef2fc8f7",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "67cbab9eca95a0762646b19a09c07d7520ae40c052d8d57f007be2d639612d8e",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "6a4f612e68b3ac9e2a2e9b20a589b616cc28f1a1abd6829fcd125a69a632db49",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "6f326283ee715d40f53e4e767ceb63ed53159e90a8dc3e4166c0fdd5bc28a740",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "757505e4f28d2916f2a700ceec5511237039de05878ff28426f89ee94ea4efc8",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "76a6f7972edba0ef415ec84458dbc18c80c04147350b4c43b2bcd60b45443a89",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "7a3d0aab089a63e815be01054598a5aab4470ac10cc16fa2a0eed20b55b3e847",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "8b6804b41e97fec4b8ee3fe8ea38a77ec6dcc80aa0c0a648e8638f1f1e733dae",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "8e9fb1deee3c47046a617540d41c00995fc8d505b22d6236267966f813ee3c37",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "9045289d1bc9e4eea235fc75ead48c0a48ef84b0da83468c6179950e7d4fb6a8",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "907942dc1edff3001da68362b6d0490b619423601580b69718579cb815cb6fe8",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "9b2303addeee2a236dd6bdb2cd9a83dbad054d59b407d61dbe95bedce07e4dca",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "9bcf5bc44e19138c73d8ee89d3c7ae7047ee6b890ac6302ed8164b3271e3d40f",
+      "effect" : "PERMIT"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "9da8726181d3b8b2e5293d7b7a4c20a1aab8886d1a4c22a016cb248d18f74365",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "a267a88bd5c6266df2b343e7458ee6cf44a45a68f8521040bd37ceb2a9352876",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "aae749661075fd09fb4514f1115b5ed8913d199c4d0ba96407819a51f2a45f8d",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "af755b2dcf861bb661a5287ec9f011b0310cfbaedcaeecad5335359027cbfaa0",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "b0044dcbd1fcc55dd7fa6836a2e0f70451eac4f93fc63038eede670a2e3c9cd3",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "b2716ec5f815f0b9cab8004859a84fc989d8574fb45d6f9a920b9e89e19df845",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "b2972f4974e9adbc8a2f1ef4802cf1da3a638a01d0f5e0ef40018ca58c802c6c",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "b83a326b8fbfd78c15be88d9fef0db1addc752f7a795783062476e023ecf56d6",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "c8b9a12510ceb4b38cf34f2c53b195ba0b0833dcc1298a05c73da603bbea68d8",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "d4944359db47bd9697d865a0fb409e741452c60a263e4354bd0b50011b0979d8",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "d89088166282664bdb9d5ff8b7672f4fba774e802849cf60e6abc79a2503654b",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "e8bb6965377eab1fab59ab6e62a934337a1985b5555802859065f76bb0e4cbd3",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "ee12eced218ee396611eadaa422f84fa05e1faa58d8ad23d8a25d8e60c4e99c7",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "f168026788766ae9aceaaf3511025243101b16a0c108b29420c44b5dbf5ee114",
+      "effect" : "DENY"
+    }, {
+      "applicationId" : "live2024",
+      "resourceId" : "im-bloommaker://routes/live2024-wf-route",
+      "subjectGroupId" : "fda8c38f3382c2d3e4c3c5325fa48c58ad9215f20aca1ca0719cfbbe693a0a98",
+      "effect" : "DENY"
+    } ]
+  }
+}

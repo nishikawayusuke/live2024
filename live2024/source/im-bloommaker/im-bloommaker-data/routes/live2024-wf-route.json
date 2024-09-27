@@ -1,0 +1,41 @@
+{
+  "routeId" : "live2024-wf-route",
+  "categoryId" : "im_accel_studio",
+  "url" : "accel-studio-app/live2024/wf",
+  "method" : "POST",
+  "contentId" : "live2024-wf-content",
+  "contentVersion" : -1,
+  "routeName" : "live2024 WF画面",
+  "description" : "「シンプルなワークフロー」テンプレートから作成されたWF画面のルーティング定義です。",
+  "sortNumber" : 7,
+  "localizes" : {
+    "zh_CN" : {
+      "routeId" : "live2024-wf-route",
+      "locale" : "zh_CN",
+      "routeName" : "live2024 WF页面",
+      "description" : "根据「简单的工作流」模板创建的WF页面的路由定义。"
+    },
+    "en" : {
+      "routeId" : "live2024-wf-route",
+      "locale" : "en",
+      "routeName" : "live2024 WF screen",
+      "description" : "This WF screen routing definition is created from the \"Simple Workflow\" template."
+    },
+    "ja" : {
+      "routeId" : "live2024-wf-route",
+      "locale" : "ja",
+      "routeName" : "live2024 WF画面",
+      "description" : "「シンプルなワークフロー」テンプレートから作成されたWF画面のルーティング定義です。"
+    }
+  },
+  "preprocesses" : [ {
+    "@class" : "jp.co.intra_mart.foundation.bloommaker.route.BMContentJavaPreprocess",
+    "routeId" : "live2024-wf-route",
+    "className" : "jp.co.intra_mart.system.workflow.bloommaker.preprocessor.WorkflowAuthChecker"
+  }, {
+    "@class" : "jp.co.intra_mart.foundation.bloommaker.route.BMContentLogicFlowPreprocess",
+    "routeId" : "live2024-wf-route",
+    "flowId" : "live2024-get-user-data",
+    "version" : null
+  } ]
+}
